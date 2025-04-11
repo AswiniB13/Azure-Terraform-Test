@@ -14,15 +14,15 @@ vnets = {
   "vnet1" = {
     location            = "East US"
     resource_group_name = "rg-dev-01"
-    address_space       = ["10.0.0.0/16"]
+    address_space       = ["1x.x.x.x/16"]
     subnets = [
       {
         subnetName             = "subnet1"  
-        address_prefixes = ["10.0.1.0/24"]
+        address_prefixes = ["xx.x.x.x/24"]
       },
       {
         subnetName             = "subnet2"
-        address_prefixes = ["10.0.2.0/24"]
+        address_prefixes = ["1x.x.x.x/24"]
       }
     ]
     tags = {
@@ -32,4 +32,4 @@ vnets = {
   }
 }
 
-subscription_id = "52b0d977-da36-47f2-a3f1-4225c823ee20"
+subscription_id = "52b0dxxxxxx-xxxx--xxxx--xxx"
