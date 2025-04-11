@@ -19,7 +19,7 @@ variable "resource_group_name" {
 variable "address_space" {
   description = "The address space for the Virtual Network"
   type        = list(string)
-  default = []
+  default = ""
 }
 
 variable "subnets" {
