@@ -1,5 +1,5 @@
 # Azure-Terraform-Test 
-**Note:** Due to time constraints, I have provisioned the essential infrastructure.
+**Note:** Due to time constraints, I have provisioned the essential infrastructure. Under Networking we can include UDR's, NSG's and Vnet Peering. And also we can deploy and make use of PAAS resources like Storage Account, Backup policies and Key Vault. We can provision Linux and Windows VM's with Extensions.
 
 ## 1. Build a reusable Terraform module to deploy an Azure Virtual Network (VNET).
 Created a reusable Terraform module for deploying the Azure Virtual Network. Using this module we can deploy multiple Vnets in Multiple environments.Also with Vnet i have created some more Terraform modules which i am using for configuring the Infrastructure.
