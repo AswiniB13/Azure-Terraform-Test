@@ -21,3 +21,8 @@ variable "vnets" {
     tags = map(string)
   }))
 }
+
+variable "subscription_id" {
+  type = string
+  description = "subscription id"
+}
