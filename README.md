@@ -4,7 +4,7 @@ Created a reusable Terraform module for deploying the Azure Virtual Network. Usi
 
 Please refer the below link for the created modules :
 
-[Terraform Modules](https://www.google.com](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/modules)
+[Terraform Modules Link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/modules)
 
 ## 2. Use this module to create multiple environments in Azure (eg: Develoment and Production), adding a few additional resources of your choice.
 Using the above Terraform modules i have deployed the Basic networking resources which i require for the basic Windows VM deployment and we can also create base modules for UDR and NSG as part of network configuration. Also deployed the Windows VM using deployed networking resources.
