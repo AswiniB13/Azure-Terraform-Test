@@ -8,9 +8,13 @@ Please refer the below link for the created modules :
 
 ## 2. Use this module to create multiple environments in Azure (eg: Develoment and Production), adding a few additional resources of your choice.
 Using the above Terraform modules i have deployed the Basic networking resources which i require for the basic Windows VM deployment and we can also create base modules for UDR and NSG as part of network configuration. Also deployed the Windows VM using deployed networking resources.
+
 Please refer below link for created resource templates :
-[Azure Resources](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/resources)
+
+[Azure Resources link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/resources)
+
 Using the above resource template we can deploy multiple resources into multiple environments by using different tfvar files.
+
 [Env files](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/env)
 
 ![Alt Text](https://github.com/AswiniB13/Azure-Terraform-Test/blob/ab-feature-branch/images/1.png)
