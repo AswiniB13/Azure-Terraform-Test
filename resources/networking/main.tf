@@ -19,4 +19,8 @@ module "vnets" {
   address_space       = each.value.address_space
   subnets             = each.value.subnets
   tags                = each.value.tags
+# Explicit dependency on the resource_groups module
+  depends_on = [
+    module.resource_groups
+  ]
 }
