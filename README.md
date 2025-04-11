@@ -1,23 +1,25 @@
-# Azure-Terraform-Test
+# Azure-Terraform-Test 
+**Note:** Due to time constraints, I have provisioned the essential infrastructure.
+
 ## 1. Build a reusable Terraform module to deploy an Azure Virtual Network (VNET).
 Created a reusable Terraform module for deploying the Azure Virtual Network. Using this module we can deploy multiple Vnets in Multiple environments.Also with Vnet i have created some more Terraform modules which i am using for configuring the Infrastructure.
 
-Please refer the below link for the created modules :
+Please refer the below link for the created modules:
 
-[Terraform Modules Link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/modules)
+[Terraform Modules Link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/main/modules)
 
 ## 2. Use this module to create multiple environments in Azure (eg: Develoment and Production), adding a few additional resources of your choice.
 Using the above Terraform modules i have deployed the Basic networking resources which i require for the basic Windows VM deployment and we can also create base modules for UDR and NSG as part of network configuration. Also deployed the Windows VM using deployed networking resources.
 
 Please refer below link for created resource templates :
 
-[Azure Resources link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/resources)
+[Azure Resources link](https://github.com/AswiniB13/Azure-Terraform-Test/tree/main/resources)
 
 Using the above resource template we can deploy multiple resources into multiple environments by using different tfvar files.
 
-[Env files](https://github.com/AswiniB13/Azure-Terraform-Test/tree/ab-feature-branch/env)
+[Env files](https://github.com/AswiniB13/Azure-Terraform-Test/tree/main/env)
 
-![Alt Text](https://github.com/AswiniB13/Azure-Terraform-Test/blob/ab-feature-branch/images/1.png)
+![Alt Text](https://github.com/AswiniB13/Azure-Terraform-Test/blob/main/images/1.png)
 
 ## Submit your work via one or many GitHub repositories, make them plublic and share the URL with us.
 For base modules we can use separate repo and share it with multiple teams, so that they can make use of same modules.but here i have used single repo for time being.
