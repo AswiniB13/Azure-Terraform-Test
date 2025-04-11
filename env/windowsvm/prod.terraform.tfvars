@@ -4,7 +4,7 @@ nics = {
     location                      = "East US"
     resource_group_name           = "rg-prod-01"
     ip_configuration_name         = "ipconfig1"
-    subnet_id                     = "/subscriptions/52b0d977-da36-47f2-a3f1-4225c823ee20/resourceGroups/rg-prod-01/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"
+    subnet_id                     = "/subscriptions/52b0d977-xxxxxxxxx-xxxx-xxxx-x-2222/resourceGroups/rg-prod-01/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"
     private_ip_allocation         = "Dynamic"
     private_ip_address            = null
     public_ip_address_id          = null
@@ -22,7 +22,7 @@ windows_vms = {
   "vm1" = {
     location             = "East US"
     resource_group_name  = "rg-prod-01"
-    network_interface_id = "/subscriptions/52b0d977-da36-47f2-a3f1-4225c823ee20/resourceGroups/rg-prod-01/providers/Microsoft.Network/networkInterfaces/nic1"
+    network_interface_id = "/subscriptions/52b0xxxxxx456789034567890/resourceGroups/rg-prod-01/providers/Microsoft.Network/networkInterfaces/nic1"
     vm_size              = "Standard_DS1_v2"
     os_disk_type         = "Standard_LRS"
     image_publisher      = "MicrosoftWindowsServer"
@@ -30,7 +30,6 @@ windows_vms = {
     image_sku            = "2019-Datacenter"
     image_version        = "latest"
     admin_username       = "adminuser"
-    # admin_password       = "SecurePassword1"
     tags = {
       environment = "Production"
       owner       = "Team A"
@@ -38,4 +37,4 @@ windows_vms = {
   }
 }
 
-subscription_id = "52b0d977-da36-47f2-a3f1-4225c823ee20"
+subscription_id = "52xxxxxxxxxxxxx-3456789456789"
