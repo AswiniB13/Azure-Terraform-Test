@@ -3,7 +3,7 @@ name: 'Terraform'
 on:
   push:
     branches: 
-    - ab-feature-branch
+    - main
   pull_request:
 
 jobs:
@@ -27,14 +27,14 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 'Terraform Format'
-      uses: hashicorp/terraform-github-actions@ab-feature-branch
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'fmt'
         tf_actions_working_dir: "./terraform"
 
     - name: 'Terraform init'
-      uses: hashicorp/terraform-github-actions@ab-feature-branch
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'init'
@@ -47,15 +47,15 @@ jobs:
         tf_actions_working_dir: "./terraform"
 
     - name: 'Terraform Plan'
-      uses: hashicorp/terraform-github-actions@ab-feature-branch
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'plan'
         tf_actions_working_dir: "./terraform"
 
     - name: 'Terraform Apply'
-      if: github.ref == 'ref/head/ab-feature-branch'
-      uses: hashicorp/terraform-github-actions@ab-feature-branch
+      if: github.ref == 'ref/head/main'
+      uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'apply'
